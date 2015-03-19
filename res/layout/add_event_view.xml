@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/addEvent"
+        android:id="@+id/addEventHead"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+   <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content" >
+
+       <TextView
+           android:id="@+id/titleView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:text="@string/title"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <EditText
+           android:id="@+id/titleEdit"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@id/titleView"
+           android:layout_marginLeft="20dp"
+           android:layout_toRightOf="@id/titleView"
+           android:ems="10"
+           android:hint="@string/titleHint" />
+
+       <TextView
+           android:id="@+id/dateView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/titleEdit"
+           android:layout_marginTop="30dp"
+           android:text="@string/date"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <DatePicker
+           android:id="@+id/dateEdit"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@id/dateView"
+           android:layout_below="@id/titleEdit"
+           android:layout_marginLeft="20dp"
+           android:layout_toRightOf="@id/dateView"
+           android:calendarViewShown="false" />
+
+       <TextView
+           android:id="@+id/timeView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/dateEdit"
+           android:layout_marginTop="30dp"
+           android:text="@string/time"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <TimePicker
+           android:id="@+id/timeEdit"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@id/timeView"
+           android:layout_below="@id/dateEdit"
+           android:layout_marginLeft="20dp"
+           android:layout_toRightOf="@id/timeView" />
+
+       <TextView
+           android:id="@+id/venueView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/timeEdit"
+           android:layout_marginTop="30dp"
+           android:text="@string/venue"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <EditText
+           android:id="@+id/venueEdit"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@id/venueView"
+           android:layout_below="@id/timeEdit"
+           android:layout_marginLeft="20dp"
+           android:layout_toRightOf="@id/venueView"
+           android:ems="10"
+           android:hint="@string/venueHint" />
+
+       <TextView
+           android:id="@+id/locationView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/venueEdit"
+           android:layout_marginTop="30dp"
+           android:text="@string/location"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <Button
+           android:id="@+id/locationEdit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@id/locationView"
+           android:layout_below="@id/venueEdit"
+           android:layout_marginLeft="20dp"
+           android:layout_toRightOf="@id/locationView"
+           android:ems="10"
+           android:text="@string/locationButton" />
+
+       <TextView
+           android:id="@+id/noteView"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/locationEdit"
+           android:layout_marginTop="30dp"
+           android:text="@string/note"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <EditText
+           android:id="@+id/noteEdit"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@id/noteView"
+           android:layout_below="@id/locationEdit"
+           android:layout_marginLeft="20dp"
+           android:layout_toRightOf="@id/noteView"
+           android:ems="10"
+           android:hint="@string/noteHint" />
+
+       <TextView
+           android:id="@+id/attendeesView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/noteEdit"
+           android:layout_marginTop="30dp"
+           android:text="@string/attendees"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <Button
+           android:id="@+id/attendeesEdit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@id/attendeesView"
+           android:layout_below="@id/noteEdit"
+           android:layout_marginLeft="20dp"
+           android:layout_toRightOf="@id/attendeesView"
+           android:text="@string/attendeesButton" />
+
+       <TextView
+           android:id="@+id/latLongText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/locationEdit"
+           android:layout_below="@+id/locationEdit" />
+
+       <TextView
+           android:id="@+id/emailsSelected"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/attendeesEdit"
+           android:layout_below="@+id/attendeesEdit" />
+
+       <Button
+           android:id="@+id/addEvent"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@id/emailsSelected"
+           android:text="@string/createEvent" />
+
+   </RelativeLayout>
+	
+   </ScrollView>
+</LinearLayout>

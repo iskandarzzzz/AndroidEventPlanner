@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calanderGrid"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+		android:id="@+id/calanderHeader"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+			
+		<Button
+		    android:id="@+id/addButtonView"
+		    android:text="@string/addButton"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" />
+
+		<TextView
+		    android:id="@+id/calanderMonthView"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:paddingLeft="@dimen/activity_horizontal_margin"
+		    android:text="@string/month"
+		    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	</RelativeLayout>
+
+	<LinearLayout
+	    android:id="@+id/dayLabelsHeader"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+		
+	    <TextView
+	        android:id="@+id/dayView1"
+	        android:text="@string/sun"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:layout_width="0dp"
+	        android:textStyle="bold"
+        	android:layout_height="wrap_content" />
+
+	    <TextView
+	        android:id="@+id/dayView2"
+	        android:text="@string/mon"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:layout_width="0dp"
+	        android:textStyle="bold"
+        	android:layout_height="wrap_content"
+	         />
+	    
+	   	<TextView
+	        android:id="@+id/dayView3"
+	        android:text="@string/tue"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:layout_width="0dp"
+	        android:textStyle="bold"
+        	android:layout_height="wrap_content"
+	        />
+	   	
+	   	<TextView
+	        android:id="@+id/dayView4"
+	        android:text="@string/wed"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:layout_width="0dp"
+	        android:textStyle="bold"
+        	android:layout_height="wrap_content" />
+	   	
+	   	<TextView
+	        android:id="@+id/dayView5"
+	        android:text="@string/thu"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:layout_width="0dp"
+	        android:textStyle="bold"
+        	android:layout_height="wrap_content" />
+	   	
+	   	<TextView
+	        android:id="@+id/dayView6"
+	        android:text="@string/fri"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:layout_width="0dp"
+	        android:textStyle="bold"
+        	android:layout_height="wrap_content" />
+	   	
+	   	<TextView
+	        android:id="@+id/dayView7"
+	        android:text="@string/sat"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:layout_width="0dp"
+	        android:textStyle="bold"
+        	android:layout_height="wrap_content" />
+	</LinearLayout>
+	
+	<GridView
+	    android:id="@+id/calanderGridView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:columnWidth="100dp"
+	    android:gravity="center"
+	    android:numColumns="7"
+	    android:paddingLeft="5dp"
+	    android:paddingRight="5dp"
+	    android:stretchMode="columnWidth" >
+	    
+	</GridView>
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+
+		<Button
+		    android:id="@+id/backMonth"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="35dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentBottom="true"
+		    android:text="@string/prev" />
+
+		<Button
+		    android:id="@+id/forwardMonth"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginRight="35dp"
+		    android:text="@string/next" />
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="20dp"
+		    android:text="@string/calendarNote" />
+
+	</RelativeLayout>
+
+</LinearLayout>

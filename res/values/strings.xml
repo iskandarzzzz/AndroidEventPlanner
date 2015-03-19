@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="en">
+
+    <string name="app_name">Social Event Planner</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="month">replace me</string>
+    <string name="addButton">+Schedule</string>
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="prev">Prev</string>
+    <string name="next">Next</string>
+    <string name="title">Title:</string>
+    <string name="titleHint">The title of the event e.g. Video game night</string>
+    <string name="date">Date:</string>
+    <string name="time">Time:</string>
+    <string name="eventName">Event Name</string>
+    <string name="numInv">Num Inv</string>
+    <string name="del">Del</string>
+    <string name="locationButton">Choose a location</string>
+    <string name="venue">Venue:</string>
+    <string name="venueHint">The location of the event e.g. RMIT University Melbourne</string>
+    <string name="location">Location:</string>
+    <string name="note">Additional Information:</string>
+    <string name="noteHint">Anything else you can think of e.g. dress code</string>
+    <string name="attendees">Attendees:</string>
+    <string name="addEvent">Enter event details</string>
+    <string name="attendeesButton">Add Attendees</string>
+    <string name="dayViewText">Schedule for  </string>
+    <string name="scheduledEvents">Events Scheduled</string>
+    <string name="exampleitem1">Dinner and Movies</string>
+    <string name="edit">Edit</string>
+    <string name="viewedit">View/Edit</string>
+    <string name="X">X</string>
+    <string name="newEvent">Add Event to this Day</string>
+    <string name="submit">SUBMIT</string>
+    <string name="latlong">Lat/Long: </string>
+    <string name="go">GO</string>
+    <string name="search">Search</string>
+    <string name="searchHint">Enter address</string>
+    <string name="createEvent">Create Event</string>
+    <string name="selectContacts">Select Contacts to Invite</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="dayViewNote">Did you know? You can long click on an event to enter VIEW ONLY mode</string>
+    <string name="calendarNote">Did you know? You can long click on an date to enter the SCHEDULE screen </string>
+    <string name="allbtn">View All Events</string>
+    <string name="calendarbtn">Calendar View</string>
+    <string name="preferences">Edit Application Preferences</string>
+    <string name="bufferTime">Edit the buffer time for alerts (minutes)</string>
+    <string name="checkTime">Edit how often the service checks for an event (seconds)</string>
+    <string name="done">Done</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+
+</resources>
